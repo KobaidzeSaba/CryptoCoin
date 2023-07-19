@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="agW-1I-aKA">
+            <objects>
+                <splitViewController storyboardIdentifier="SplitViewController" allowDoubleColumnStyle="YES" preferredDisplayMode="over" behavior="tile" primaryBackgroundStyle="sidebar" id="VPx-cs-Ogm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faK-ao-fUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-966" y="4"/>
+        </scene>
+        <!--Crypto Coin List View Controller-->
+        <scene sceneID="c0V-tF-os9">
+            <objects>
+                <viewController storyboardIdentifier="list" id="86M-Q9-GYz" customClass="CryptoCoinListViewController" customModule="CryptoCoins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B5m-e8-Bcl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SVI-cm-gqi">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" name="crypto_backgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="88" id="omf-gC-RJq" customClass="CryptoCoinListTableViewCell" customModule="CryptoCoins" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="omf-gC-RJq" id="MD9-qx-rvw">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="88"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uBf-UB-Jwe">
+                                                    <rect key="frame" x="16" y="16" width="56" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="uBf-UB-Jwe" secondAttribute="height" id="MFS-n6-n5h"/>
+                                                        <constraint firstAttribute="height" constant="56" id="a8w-Qf-NAN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQh-81-hln">
+                                                    <rect key="frame" x="88" y="32" width="41.333333333333343" height="24"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYZ-Mf-vwY">
+                                                    <rect key="frame" x="347" y="32" width="42" height="24"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uBf-UB-Jwe" firstAttribute="top" secondItem="MD9-qx-rvw" secondAttribute="top" constant="16" id="GZi-kD-lUU"/>
+                                                <constraint firstItem="uBf-UB-Jwe" firstAttribute="leading" secondItem="MD9-qx-rvw" secondAttribute="leading" constant="16" id="HA5-SV-6om"/>
+                                                <constraint firstItem="xQh-81-hln" firstAttribute="centerY" secondItem="MD9-qx-rvw" secondAttribute="centerY" id="HcF-lI-e7U"/>
+                                                <constraint firstItem="hYZ-Mf-vwY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xQh-81-hln" secondAttribute="trailing" constant="8" id="IU3-Cn-lkr"/>
+                                                <constraint firstItem="hYZ-Mf-vwY" firstAttribute="centerY" secondItem="MD9-qx-rvw" secondAttribute="centerY" id="R5A-06-GeF"/>
+                                                <constraint firstItem="hYZ-Mf-vwY" firstAttribute="trailing" secondItem="MD9-qx-rvw" secondAttribute="trailingMargin" constant="16" id="bFx-Ce-xpF"/>
+                                                <constraint firstAttribute="bottom" secondItem="uBf-UB-Jwe" secondAttribute="bottom" constant="16" id="dh5-Ma-Nl4"/>
+                                                <constraint firstItem="xQh-81-hln" firstAttribute="leading" secondItem="uBf-UB-Jwe" secondAttribute="trailing" constant="16" id="j2x-4w-HbS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="crypto_backgroundColor"/>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="uBf-UB-Jwe" id="fnl-5G-Zhs"/>
+                                            <outlet property="nameLabel" destination="xQh-81-hln" id="L8k-ES-8EK"/>
+                                            <outlet property="priceLabel" destination="hYZ-Mf-vwY" id="Ect-gF-crz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MYF-HW-Ej4"/>
+                        <color key="backgroundColor" name="crypto_backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SVI-cm-gqi" firstAttribute="leading" secondItem="MYF-HW-Ej4" secondAttribute="leading" id="3xC-83-OPA"/>
+                            <constraint firstItem="SVI-cm-gqi" firstAttribute="top" secondItem="MYF-HW-Ej4" secondAttribute="top" id="7GZ-9N-FIB"/>
+                            <constraint firstItem="MYF-HW-Ej4" firstAttribute="trailing" secondItem="SVI-cm-gqi" secondAttribute="trailing" id="Ct5-Vl-gac"/>
+                            <constraint firstItem="MYF-HW-Ej4" firstAttribute="bottom" secondItem="SVI-cm-gqi" secondAttribute="bottom" id="iZ6-DU-xWx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="SVI-cm-gqi" id="Y7a-rY-BB4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2Z-tx-npZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
+        </scene>
+        <!--Crypto Coin Details View Controller-->
+        <scene sceneID="MRT-Sb-HOc">
+            <objects>
+                <viewController storyboardIdentifier="detail" id="ebr-N2-LJb" customClass="CryptoCoinDetailsViewController" customModule="CryptoCoins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kKU-fg-UzO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="iwL-Rk-Yxq">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2S-bw-2jt">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="EJi-AK-Lvg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ah-Ki-Xff">
+                                        <rect key="frame" x="0.0" y="96" width="393" height="120"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="k4r-TM-Fi0">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="140"/>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZS-6e-SHh">
+                                        <rect key="frame" x="0.0" y="240" width="393" height="519"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ret-mR-yJl"/>
+                        <color key="backgroundColor" name="crypto_backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iwL-Rk-Yxq" firstAttribute="leading" secondItem="kKU-fg-UzO" secondAttribute="leading" id="1ke-P7-Ydu"/>
+                            <constraint firstAttribute="trailing" secondItem="iwL-Rk-Yxq" secondAttribute="trailing" id="3Pe-rA-wMo"/>
+                            <constraint firstItem="iwL-Rk-Yxq" firstAttribute="top" secondItem="Ret-mR-yJl" secondAttribute="top" id="SD1-5y-Csu"/>
+                            <constraint firstItem="Ret-mR-yJl" firstAttribute="bottom" secondItem="iwL-Rk-Yxq" secondAttribute="bottom" id="h1d-7b-Iky"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="historyContainerView" destination="zZS-6e-SHh" id="wuI-uB-EV1"/>
+                        <outlet property="suggestionContainerView" destination="4ah-Ki-Xff" id="Kv2-FB-UOm"/>
+                        <outlet property="titleCrypto" destination="j2S-bw-2jt" id="vsv-dW-QOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9f5-37-9o6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878.62595419847321" y="-3.5211267605633805"/>
+        </scene>
+        <!--Crypto Coin Related List View Controller-->
+        <scene sceneID="NcA-gT-Fjy">
+            <objects>
+                <viewController storyboardIdentifier="suggestions" id="8lm-y5-TkZ" customClass="CryptoCoinRelatedListViewController" customModule="CryptoCoins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4sz-Tp-USg">
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="24M-4m-r39">
+                                <rect key="frame" x="0.0" y="0.0" width="550" height="194"/>
+                                <color key="backgroundColor" name="crypto_backgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SKN-sp-K98">
+                                    <size key="itemSize" width="118" height="137"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gEd-4J-2av" customClass="CryptoCoinCollectionViewCell" customModule="CryptoCoins" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-18" width="118" height="137"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HeS-No-w1V">
+                                            <rect key="frame" x="0.0" y="0.0" width="118" height="137"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXO-Yc-qzT">
+                                                    <rect key="frame" x="51" y="119" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6bv-vs-Bkk">
+                                                    <rect key="frame" x="8" y="3" width="115" height="108"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="6bv-vs-Bkk" secondAttribute="height" id="OQu-Ri-poS"/>
+                                                        <constraint firstAttribute="width" constant="72" id="tVA-eP-FYK"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iXO-Yc-qzT" firstAttribute="top" secondItem="6bv-vs-Bkk" secondAttribute="bottom" constant="16" id="1ve-7e-tMA"/>
+                                                <constraint firstItem="6bv-vs-Bkk" firstAttribute="leading" secondItem="HeS-No-w1V" secondAttribute="leading" constant="12" id="EcM-3U-aZv"/>
+                                                <constraint firstItem="iXO-Yc-qzT" firstAttribute="centerX" secondItem="HeS-No-w1V" secondAttribute="centerX" id="UZX-z9-Car"/>
+                                                <constraint firstAttribute="trailing" secondItem="6bv-vs-Bkk" secondAttribute="trailing" constant="12" id="Uxa-zl-VXt"/>
+                                                <constraint firstItem="6bv-vs-Bkk" firstAttribute="top" secondItem="HeS-No-w1V" secondAttribute="top" constant="12" id="fjz-5j-nlO"/>
+                                                <constraint firstAttribute="bottom" secondItem="iXO-Yc-qzT" secondAttribute="bottom" constant="16" id="tll-nx-zyZ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="118" height="137"/>
+                                        <connections>
+                                            <outlet property="cryptoNameLabel" destination="iXO-Yc-qzT" id="0Ge-56-YSs"/>
+                                            <outlet property="iconImageView" destination="6bv-vs-Bkk" id="W1L-eJ-Rpa"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ixr-JW-f3W"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="24M-4m-r39" firstAttribute="top" secondItem="4sz-Tp-USg" secondAttribute="top" id="AB2-JC-RUW"/>
+                            <constraint firstItem="ixr-JW-f3W" firstAttribute="trailing" secondItem="24M-4m-r39" secondAttribute="trailing" id="Jqi-l8-7za"/>
+                            <constraint firstItem="24M-4m-r39" firstAttribute="leading" secondItem="ixr-JW-f3W" secondAttribute="leading" id="O7C-m4-dYC"/>
+                            <constraint firstAttribute="bottom" secondItem="24M-4m-r39" secondAttribute="bottom" id="f4c-7q-6u8"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="550" height="194"/>
+                    <connections>
+                        <outlet property="collectionView" destination="24M-4m-r39" id="gHj-bo-NjZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="abF-Xm-iHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862.5954198473282" y="-235.21126760563382"/>
+        </scene>
+        <!--Crypto Coin Price History View Controller-->
+        <scene sceneID="4gK-ny-bHO">
+            <objects>
+                <viewController storyboardIdentifier="history" id="kOJ-qn-1Qb" customClass="CryptoCoinPriceHistoryViewController" customModule="CryptoCoins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hfg-6F-IgY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZBt-yv-ZWr">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="500"/>
+                                <color key="backgroundColor" name="crypto_backgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="y3N-sb-x27" detailTextLabel="Xi1-p4-LYv" style="IBUITableViewCellStyleValue1" id="Y8U-0a-jkc" customClass="CryptoCoinPriceHistoryTableViewCell" customModule="CryptoCoins" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y8U-0a-jkc" id="tYu-Th-yxI">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y3N-sb-x27">
+                                                    <rect key="frame" x="20" y="15" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xi1-p4-LYv">
+                                                    <rect key="frame" x="340.33333333333331" y="15" width="32.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="crypto_backgroundColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8PV-yp-f9v"/>
+                        <color key="backgroundColor" name="crypto_backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8PV-yp-f9v" firstAttribute="trailing" secondItem="ZBt-yv-ZWr" secondAttribute="trailing" id="bq8-jU-YXB"/>
+                            <constraint firstItem="ZBt-yv-ZWr" firstAttribute="top" secondItem="Hfg-6F-IgY" secondAttribute="top" id="cah-eL-GMY"/>
+                            <constraint firstItem="ZBt-yv-ZWr" firstAttribute="leading" secondItem="8PV-yp-f9v" secondAttribute="leading" id="iPz-Nj-B4h"/>
+                            <constraint firstItem="8PV-yp-f9v" firstAttribute="bottom" secondItem="ZBt-yv-ZWr" secondAttribute="bottom" id="vbA-2T-IRX"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="500"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZBt-yv-ZWr" id="JbD-zr-MDG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIC-cf-QTX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.7022900763359" y="274.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="crypto_backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

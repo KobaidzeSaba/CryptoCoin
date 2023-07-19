@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9060FE13-7139-422E-9515-C822ED349971"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1487FD40-B5BD-4107-9B96-6C228662CFD2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CryptoCoins/DataLayer/Remotes/CryptoCoinRankingRemoteAPI/Implementation/CryptoCoinRankingRemoteAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "loadCryptoListPage(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1487FD40-B5BD-4107-9B96-6C228662CFD2 - 5fa59c718f1997c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for CryptoCoins.CryptoCoinRankingRemoteAPI.loadCryptoListPage(Swift.Int) async throws -&gt; Swift.Array&lt;CryptoCoins.CryptoCoinModel&gt;"
+                  moduleName = "CryptoCoins"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabakobaidze/Projects/CryptoCoins/CryptoCoins/DataLayer/Remotes/CryptoCoinRankingRemoteAPI/Implementation/CryptoCoinRankingRemoteAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "1487FD40-B5BD-4107-9B96-6C228662CFD2 - 5fa59c718f1997c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for CryptoCoins.CryptoCoinRankingRemoteAPI.loadCryptoListPage(Swift.Int) async throws -&gt; Swift.Array&lt;CryptoCoins.CryptoCoinModel&gt;"
+                  moduleName = "CryptoCoins"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabakobaidze/Projects/CryptoCoins/CryptoCoins/DataLayer/Remotes/CryptoCoinRankingRemoteAPI/Implementation/CryptoCoinRankingRemoteAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "700">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
